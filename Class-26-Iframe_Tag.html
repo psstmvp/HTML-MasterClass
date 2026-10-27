@@ -1,0 +1,65 @@
+<!-- Program: Iframe Tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Iframe Tag</title>
+
+</head>
+
+<body>
+
+    <h1>Iframe Tag</h1>
+    <!-- Main heading of the webpage -->
+
+    <p>The &lt;iframe&gt; tag embeds an external or local webpage inside the current page:</p>
+
+    <!-- 1. Local HTML document embed -->
+    <h2>1. Embedding Local Webpage</h2>
+    <iframe src="Class-1-HTML_Document_Structure.html" title="Class 1 Preview" width="450" height="200" loading="lazy">
+        Your browser does not support iframes.
+    </iframe>
+
+    <hr>
+
+    <!-- 2. YouTube Video Embedding -->
+    <h2>2. YouTube Video Embedding</h2>
+    <!-- YouTube videos are embedded using an iframe pointing to https://www.youtube.com/embed/VIDEO_ID -->
+    <iframe width="450" height="250" 
+            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
+
+    <hr>
+
+    <!-- 3. Sandboxed Iframe -->
+    <h2>3. Sandboxed Iframe</h2>
+    <!-- sandbox restricts permissions for security -->
+    <iframe src="Class-2-Heading_Tags.html" title="Sandboxed Frame" width="450" height="150" sandbox="allow-same-origin">
+    </iframe>
+
+    <!--
+        Iframe Attributes
+
+        What is it for:
+        Used to embed an external webpage, online map, YouTube video, or third-party widget
+        directly within an isolated frame inside the current webpage.
+
+        Attributes:
+        src             : Specifies the URL, file, or video embed link.
+        title           : Essential for accessibility (describes the frame content).
+        width           : Width of the iframe in pixels.
+        height          : Height of the iframe in pixels.
+        loading         : loading="lazy" delays loading until scrolled into view.
+        sandbox         : Restricts scripts, forms, and popups for safety.
+        allowfullscreen : Allows embedded video to enter full screen mode.
+    -->
+
+</body>
+
+</html>

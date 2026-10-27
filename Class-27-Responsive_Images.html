@@ -1,0 +1,54 @@
+<!-- Program: Responsive Images -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Responsive Images</title>
+
+</head>
+
+<body>
+
+    <h1>Responsive Images</h1>
+    <!-- Main heading of the webpage -->
+
+    <!-- <picture> serves different images for different screen widths -->
+
+    <h2>1. Art Direction with &lt;picture&gt;</h2>
+
+    <picture>
+        <source media="(min-width: 600px)" srcset="Images/Desert.jpg">
+        <source media="(min-width: 400px)" srcset="Images/Desert.jpg">
+        <img src="Images/Desert.jpg" alt="Desert landscape view" width="300" height="200">
+    </picture>
+
+    <hr>
+
+    <h2>2. Resolution Switching with srcset and sizes</h2>
+
+    <img src="Images/Desert.jpg"
+         srcset="Images/Desert.jpg 400w, Images/Desert.jpg 800w"
+         sizes="(max-width: 600px) 100vw, 400px"
+         alt="Desert sand dunes"
+         loading="lazy">
+
+    <!--
+        Responsive Image Tags
+
+        What is it for:
+        Used to serve different image files or resolutions depending on the visitor's screen width,
+        orientation, or device pixel density to save bandwidth and improve page load speed.
+
+        Tags & Attributes:
+        <picture> : Container element for multiple image sources.
+        <source>  : Specifies image resources based on media queries or formats.
+        <img>     : Fallback image element; required inside <picture>.
+        srcset    : List of image files and width descriptors (e.g. 400w).
+        sizes     : Specifies display size conditions for the browser.
+    -->
+
+</body>
+
+</html>

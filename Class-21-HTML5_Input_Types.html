@@ -1,0 +1,124 @@
+<!-- Program: HTML5 Input Types -->
+
+<!DOCTYPE html>
+<!-- Declares the document type as HTML5 -->
+
+<html>
+
+<head>
+
+    <title>HTML5 Input Types</title>
+
+</head>
+
+<body>
+
+    <h1>HTML5 Input Types</h1>
+    <!-- Main heading of the webpage -->
+
+    <p>HTML5 introduced modern input types with specialized controls and native mobile keyboards:</p>
+
+    <form>
+
+        <table border="1" cellpadding="5">
+
+            <tr>
+                <td>Color</td>
+                <td><input type="color" name="txt_color" value="#0066cc"></td>
+            </tr>
+
+            <tr>
+                <td>Date</td>
+                <td><input type="date" name="txt_date"></td>
+            </tr>
+
+            <tr>
+                <td>Time</td>
+                <td><input type="time" name="txt_time"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="txt_email" placeholder="user@domain.com"></td>
+            </tr>
+
+            <tr>
+                <td>Number</td>
+                <td><input type="number" name="txt_number" min="1" max="100" value="5"></td>
+            </tr>
+
+            <tr>
+                <td>Range</td>
+                <td><input type="range" name="txt_range" min="0" max="100" value="50"></td>
+            </tr>
+
+            <tr>
+                <td>Search</td>
+                <td><input type="search" name="txt_search" placeholder="Search..."></td>
+            </tr>
+
+            <tr>
+                <td>Telephone</td>
+                <td><input type="tel" name="txt_tel" placeholder="10-digit number"></td>
+            </tr>
+
+            <tr>
+                <td>URL</td>
+                <td><input type="url" name="txt_url" placeholder="https://example.com"></td>
+            </tr>
+
+            <tr>
+                <td>Month</td>
+                <td><input type="month" name="txt_month"></td>
+            </tr>
+
+            <tr>
+                <td>Week</td>
+                <td><input type="week" name="txt_week"></td>
+            </tr>
+
+            <tr>
+                <td>Hidden</td>
+                <td>
+                    <!-- Hidden field holds data not shown to user -->
+                    <input type="hidden" name="user_id" value="101">
+                    <i>(Hidden field: holds user_id=101 behind the scenes)</i>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" name="btn_submit" value="Submit">
+                    <input type="reset" name="btn_reset" value="Reset">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <!--
+        HTML5 Input Types Summary:
+
+        What is it for:
+        Used to provide built-in interactive input widgets (such as color palettes,
+        calendars, and range sliders) and trigger context-specific touch keyboards on mobile devices.
+
+        Input Types:
+        color  : Color picker widget.
+        date   : Date selector (calendar).
+        time   : Time selector.
+        email  : Validates email address format.
+        number : Number input with spinner (min, max, step).
+        range  : Slider control.
+        search : Search input with clear button.
+        tel    : Phone number keypad on mobile devices.
+        url    : Web address input.
+        month  : Month and year picker.
+        week   : Week and year picker.
+        hidden : Holds hidden values submitted to server.
+    -->
+
+</body>
+
+</html>

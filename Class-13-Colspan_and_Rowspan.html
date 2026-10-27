@@ -1,0 +1,105 @@
+<!-- Program: Colspan, Rowspan, and Nested Tables -->
+
+<html>
+
+<head>
+
+  <title>Colspan, Rowspan, and Nested Tables</title>
+
+</head>
+
+<body>
+
+  <h1>Colspan, Rowspan, and Nested Tables</h1>
+  <!-- Main heading of the webpage -->
+
+  <p><b>Table Cell Merging Attributes</b></p>
+
+  <ul>
+    <li><b>colspan</b> - Merges two or more columns into a single column.</li>
+    <li><b>rowspan</b> - Merges two or more rows into a single row.</li>
+  </ul>
+
+  <hr>
+
+  <h2>1. Table Demonstrating Colspan and Rowspan</h2>
+
+  <table border="1" cellpadding="5">
+
+    <tr>
+      <th colspan="4" align="center">Student List</th>
+    </tr>
+
+    <tr>
+      <th>Roll No</th>
+      <th>Name</th>
+      <th>Mark</th>
+      <th>Remarks</th>
+    </tr>
+
+    <tr>
+      <td>1</td>
+      <td>Arun</td>
+      <td>450</td>
+      <td rowspan="2">Good</td>
+    </tr>
+
+    <tr>
+      <td>2</td>
+      <td>Jose</td>
+      <td>550</td>
+    </tr>
+
+  </table>
+
+  <hr>
+
+  <h2>2. Nested Table (Table Inside Table)</h2>
+  <!-- A nested table is placed inside a <td> cell of an outer table -->
+
+  <table border="1" cellpadding="8">
+
+    <tr>
+      <th>Department</th>
+      <th>Details (Nested Table)</th>
+    </tr>
+
+    <tr>
+      <td>Computer Science</td>
+      <td>
+        <!-- Inner nested table -->
+        <table border="1" cellpadding="4">
+          <tr>
+            <th>Course</th>
+            <th>Duration</th>
+          </tr>
+          <tr>
+            <td>MCA</td>
+            <td>2 Years</td>
+          </tr>
+          <tr>
+            <td>BCA</td>
+            <td>3 Years</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+
+  <!--
+        Table Features
+
+        What is it for:
+        Used to create complex table layouts by merging adjacent cells across columns
+        or rows, and by placing tables inside other tables for advanced data organization.
+
+        Features:
+        colspan      : Merges two or more columns into a single cell horizontally.
+        rowspan      : Merges two or more rows into a single cell vertically.
+        Nested Table : A table placed inside a <td> cell of another table.
+    -->
+
+</body>
+
+</html>

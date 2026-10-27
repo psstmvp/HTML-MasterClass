@@ -1,0 +1,100 @@
+<!-- Program: Form Validation -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Form Validation</title>
+
+</head>
+
+<body>
+
+    <h1>Form Validation</h1>
+    <!-- Main heading of the webpage -->
+
+    <p>HTML5 provides built-in validation attributes to verify input before submission:</p>
+
+    <form method="post">
+
+        <table border="1" cellpadding="5">
+
+            <tr>
+                <td>Name (Required, Min 3 chars)</td>
+                <td>
+                    <!-- required makes field mandatory; minlength sets minimum chars -->
+                    <input type="text" name="txt_name" required minlength="3" maxlength="20" placeholder="Enter your name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Age (Between 18 and 60)</td>
+                <td>
+                    <!-- min and max define numerical range -->
+                    <input type="number" name="txt_age" min="18" max="60" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Phone (Pattern 10 Digits)</td>
+                <td>
+                    <!-- pattern enforces a regular expression -->
+                    <input type="tel" name="txt_phone" pattern="[0-9]{10}" placeholder="10 digits only" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password (Min 6 chars)</td>
+                <td>
+                    <input type="password" name="txt_pass" minlength="6" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Country (Readonly)</td>
+                <td>
+                    <!-- readonly: user can view/copy but cannot change; value is submitted -->
+                    <input type="text" name="txt_country" value="India" readonly>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Account Status (Disabled)</td>
+                <td>
+                    <!-- disabled: greyed out, cannot be clicked/changed; value is not submitted -->
+                    <input type="text" name="txt_status" value="Active" disabled>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+
+    <!--
+        Validation & Field State Attributes
+
+        What is it for:
+        Used to ensure data entered by the user is complete, accurate, and properly formatted
+        before submitting the form, without requiring JavaScript.
+
+        Attributes:
+        required    : Field cannot be left empty.
+        minlength   : Minimum characters allowed.
+        maxlength   : Maximum characters allowed.
+        min / max   : Minimum and maximum numbers or dates.
+        pattern     : Regular expression pattern for input.
+        placeholder : Hint text shown before user types.
+        readonly    : Value cannot be edited, but is submitted with form.
+        disabled    : Disables control completely; not submitted with form.
+    -->
+
+</body>
+
+</html>

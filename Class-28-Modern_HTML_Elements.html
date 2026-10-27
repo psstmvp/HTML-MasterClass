@@ -1,0 +1,88 @@
+<!-- Program: Modern HTML Elements -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Modern HTML Elements</title>
+
+</head>
+
+<body>
+
+    <h1>Modern HTML Elements</h1>
+    <!-- Main heading of the webpage -->
+
+    <!-- Figure with Caption -->
+    <h2>1. Figure and Caption</h2>
+    <figure>
+        <img src="Images/Desert.jpg" alt="Desert landscape" width="200" height="130">
+        <figcaption>Fig 1: Sahara desert sand dunes.</figcaption>
+    </figure>
+
+    <hr>
+
+    <!-- Details and Summary (Collapsible Accordion) -->
+    <h2>2. Details and Summary</h2>
+    <details>
+        <summary>Click to view instructions</summary>
+        <p>Type your code inside a text editor and save with a .html extension.</p>
+    </details>
+
+    <hr>
+
+    <!-- Date/Time, Code and Pre -->
+    <h2>3. Time, Code, and Preformatted Text</h2>
+    <p>Class Date: <time datetime="2026-10-12">October 12, 2026</time></p>
+    <p>Shortcut: Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save file.</p>
+    <p>Code tag: <code>&lt;h1&gt;</code> defines a heading.</p>
+
+    <pre>
+Line 1
+    Indented Line 2
+Line 3
+    </pre>
+
+    <hr>
+
+    <!-- Progress and Meter -->
+    <h2>4. Progress and Meter</h2>
+    <p>Task Progress: <progress value="80" max="100"></progress> 80%</p>
+    <p>Storage Gauge: <meter min="0" max="100" value="65">65%</meter> 65%</p>
+
+    <hr>
+
+    <!-- Native Dialog -->
+    <h2>5. Native Dialog</h2>
+    <button type="button" onclick="document.getElementById('my-dialog').showModal()">Open Dialog</button>
+
+    <dialog id="my-dialog">
+        <p>This is a native HTML5 dialog popup!</p>
+        <button type="button" onclick="document.getElementById('my-dialog').close()">Close</button>
+    </dialog>
+
+    <!--
+        Modern HTML Elements
+
+        What is it for:
+        Used to build rich interactive widgets (accordions, progress meters, dialog popups,
+        figures, and code snippets) natively without requiring external JavaScript libraries.
+
+        Tags:
+        <figure>     : Groups visual content with a caption.
+        <figcaption> : Caption for the figure.
+        <details>    : Interactive toggle accordion.
+        <summary>    : Visible header for details.
+        <time>       : Machine-readable date/time.
+        <code>       : Inline computer code.
+        <kbd>        : Keyboard shortcut.
+        <pre>        : Preformatted text.
+        <progress>   : Progress bar.
+        <meter>      : Scalar gauge.
+        <dialog>     : Native popup modal.
+    -->
+
+</body>
+
+</html>

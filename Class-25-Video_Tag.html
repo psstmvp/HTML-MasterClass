@@ -1,0 +1,45 @@
+<!-- Program: Video Tag -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Video Tag</title>
+
+</head>
+
+<body>
+
+    <h1>Video Tag</h1>
+    <!-- Main heading of the webpage -->
+
+    <!-- <video> is used to embed video files in HTML -->
+
+    <video controls width="400" height="250" poster="Images/Desert.jpg">
+        <source src="Media/sample.mp4" type="video/mp4">
+        <source src="Media/sample.webm" type="video/webm">
+        <!-- <track> specifies subtitles or captions -->
+        <track src="Media/subtitles.vtt" kind="subtitles" srclang="en" label="English">
+        Your browser does not support the video tag.
+    </video>
+
+    <!--
+        Video Tag Attributes
+
+        What is it for:
+        Used to embed movie clips, tutorial videos, and animated recordings directly into a webpage
+        with native playback, subtitle tracks, and thumbnail posters.
+
+        Attributes:
+        controls : Adds play, pause, volume, and fullscreen buttons.
+        width    : Width of the video player in pixels.
+        height   : Height of the video player in pixels.
+        poster   : Image displayed while video is downloading or before play.
+        autoplay : Automatically starts playing video.
+        loop     : Restarts video automatically upon ending.
+    -->
+
+</body>
+
+</html>

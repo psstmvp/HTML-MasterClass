@@ -1,0 +1,55 @@
+<!-- Program: Frames -->
+
+<html>
+
+<head>
+
+    <title>Frames</title>
+
+</head>
+
+<!-- Nested <frameset> divides the browser window into multiple frames -->
+
+<frameset cols="50%,50%">
+    <!-- cols divides the browser window vertically into two columns -->
+
+    <frame src="Class-12-HTML_Table.html">
+        <!-- Displays Class-12-HTML_Table.html in left column -->
+
+    <frameset rows="50%,50%">
+        <!-- rows divides the right column horizontally into two rows (Nested Frameset) -->
+
+        <frame src="Class-11-HTML_Lists.html">
+            <!-- Displays Class-11-HTML_Lists.html in top right -->
+
+        <frame src="Class-8-Hyperlink_Tag.html">
+            <!-- Displays Class-8-Hyperlink_Tag.html in bottom right -->
+
+    </frameset>
+
+</frameset>
+
+<!--
+    Frameset Attributes
+
+    What is it for:
+    Used in classic HTML to split the browser window into multiple independent sub-windows
+    (frames), each displaying a separate HTML document simultaneously.
+
+    Tags & Attributes:
+    <frameset> : Divides the browser window into multiple frames.
+    <frame>    : Specifies the webpage to be displayed inside each frame.
+
+    cols       : Divides the window into vertical columns (e.g. cols="50%,50%").
+    rows       : Divides the window into horizontal rows (e.g. rows="50%,50%").
+    src        : Specifies the source webpage for the frame.
+
+    Nested Frameset:
+    A <frameset> placed inside another <frameset> allows dividing
+    columns and rows simultaneously into complex section layouts.
+
+    Modern Note: <frameset> and <frame> are obsolete in HTML5.
+    Modern websites embed external content using <iframe>.
+-->
+
+</html>

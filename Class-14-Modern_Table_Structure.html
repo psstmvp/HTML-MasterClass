@@ -1,0 +1,72 @@
+<!-- Program: Modern Semantic Table -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Modern Semantic Table</title>
+
+</head>
+
+<body>
+
+  <h1>Modern Semantic Table</h1>
+  <!-- Main heading of the webpage -->
+
+  <table border="1" cellpadding="6">
+
+    <!-- <caption> defines the title of the table -->
+    <caption>Student Grade Report</caption>
+
+    <!-- <thead> defines table header section -->
+    <thead>
+      <tr>
+        <th scope="col">Roll No</th>
+        <th scope="col">Name</th>
+        <th scope="col">Marks</th>
+      </tr>
+    </thead>
+
+    <!-- <tbody> defines table body data section -->
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Arun</td>
+        <td>90</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Jose</td>
+        <td>85</td>
+      </tr>
+    </tbody>
+
+    <!-- <tfoot> defines table summary or footer section -->
+    <tfoot>
+      <tr>
+        <td colspan="2"><b>Total Marks</b></td>
+        <td><b>175</b></td>
+      </tr>
+    </tfoot>
+
+  </table>
+
+  <!--
+        Modern Semantic Table Tags
+
+        What is it for:
+        Used to semantically organize tables into logical header, body, and footer sections,
+        improving screen-reader accessibility and styling control for large data sets.
+
+        Tags & Attributes:
+        <caption> : Title or summary of the table for accessibility.
+        <thead>   : Groups header rows.
+        <tbody>   : Groups body content rows.
+        <tfoot>   : Groups footer/total rows.
+        scope     : scope="col" or scope="row" specifies header association.
+    -->
+
+</body>
+
+</html>

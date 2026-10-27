@@ -1,0 +1,100 @@
+<!-- Program: Form Controls and Grouping -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Form Controls and Grouping</title>
+
+</head>
+
+<body>
+
+    <h1>Form Controls and Grouping</h1>
+    <!-- Main heading of the webpage -->
+
+    <form action="#" method="post">
+
+        <!-- <fieldset> groups related input fields -->
+        <fieldset>
+            <!-- <legend> gives a title to the fieldset box -->
+            <legend>Account Details</legend>
+
+            <p>
+                <!-- <label for="id"> associates text with the input -->
+                <label for="txt-username">Username:</label><br>
+                <input type="text" id="txt-username" name="txt_username">
+            </p>
+
+            <p>
+                <label for="sel-department">Department (Dropdown):</label><br>
+                <select id="sel-department" name="sel_department">
+                    <option value="">--Select Department--</option>
+                    <optgroup label="Computer Applications">
+                        <option value="mca">MCA</option>
+                        <option value="bca">BCA</option>
+                    </optgroup>
+                    <optgroup label="Management">
+                        <option value="mba">MBA</option>
+                        <option value="bba">BBA</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="sel-skills">Elective Subjects (Multi-Select):</label><br>
+                <!-- multiple allows choosing more than one option (hold Ctrl / Cmd) -->
+                <select id="sel-skills" name="sel_skills" multiple size="3">
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="cloud">Cloud Computing</option>
+                    <option value="cyber">Cyber Security</option>
+                </select>
+            </p>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Message and Buttons</legend>
+
+            <p>
+                <label for="txt-feedback">Feedback:</label><br>
+                <!-- <textarea> defines multi-line text input -->
+                <textarea id="txt-feedback" name="txt_feedback" rows="4" cols="35"></textarea>
+            </p>
+
+            <p>
+                <!-- Different button types -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button" onclick="alert('Hello from HTML Button!')">Normal Button</button>
+            </p>
+
+        </fieldset>
+
+    </form>
+
+    <!--
+        Form Controls & Grouping Tags:
+
+        What is it for:
+        Used to make forms accessible, intuitive, and well-structured by grouping
+        related questions into bordered sections and providing clickable text labels.
+
+        Tags:
+        <label for="id"> : Binds label to input control; clicking text focuses input.
+        <fieldset>       : Draws a border around related fields.
+        <legend>         : Caption/header for <fieldset>.
+        <select>         : Dropdown selection container.
+        <select multiple>: Allows multiple selections by holding Ctrl/Cmd.
+        <optgroup>       : Groups related options inside dropdown.
+        <option>         : Individual item in dropdown.
+        <textarea>       : Multi-line text field.
+        <button>         : Clickable button (type="submit", "reset", or "button").
+    -->
+
+</body>
+
+</html>
